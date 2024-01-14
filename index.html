@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/all.min.css">
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav>
+        <div class="container ">
+            <div class="nav-content d-flex justify-content-between ">
+                <div class="nav-logo d-flex ">
+                    <div class="nav-ico">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                    <div class="nav-logo-text">
+                        <a href="#" class="text-decoration-none fs-5">Weather</a>
+                        <p>tgline goes here</p>
+                    </div>
+                </div>
+                <div class="nav-list">
+                    <ul class="d-flex justify-content-evenly ">
+                        <li class="list-unstyled mx-3 nav-active"><a href="./index.html" class="text-decoration-none ">Home</a></li>
+                        <li class="list-unstyled mx-3"><a href="#" class="text-decoration-none">News</a></li>
+                        <li class="list-unstyled mx-3"><a href="#" class="text-decoration-none">Live cameras</a></li>
+                        <li class="list-unstyled mx-3"><a href="#" class="text-decoration-none">Photos</a></li>
+                        <li class="list-unstyled mx-3"><a href="./contact.html" class="text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="app-container">
+        <div class="container px-3 py-5 text-center">
+
+            
+            <!-- Search input -->
+            <div class="find position-relative top-0 left-0">
+                <input type="text" id="searchInput" class="w-100 mx-auto rounded-5 py-3 px-4 searchColor mb-5 text-white" placeholder="Enter Your Location....."   >
+                <input type="button" value="Find" id="Find">
+            </div>
+            <div class="row g-0">
+
+                <!-- Today Data -->
+                <div class="col-md-4 today-color rounded-4">
+                    <div id="todayDate" class="d-flex justify-content-between py-2 px-3 header-color text-light rounded-start">
+                        <p id="todayName" class="my-auto"> Sunday</p>
+                        <span>
+                            <span id="todayNumber" class="my-auto">30</span>
+                            <span id="todayMonth" class="my-auto">May</span>
+                        </span>
+                    </div>
+                        <div class="item-content text-start px-3 py-3 pt-5 text-light" id="today">
+                            <p id="todayCity" class="fs-4">Cairo</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class=" fs-1 fw-bolder">
+                                    <span id="todayTemp"> 20 </span>
+                                    <span style="margin-left: -8px;">&deg; C</span>
+                                </span>
+                                <img src="./images/113.png" id="todayDesc" alt="">
+                            </div>
+                            <p id="todayCondationText" class="fs-6 text-light-blue">Sunny</p>
+                        </div>
+                        <div class="item-footer d-flex text-light p-3">
+                            <div class="d-flex me-3">
+                                <img src="./images/icon-umberella.png" class="footer-icon me-2" alt="">
+                                <p id="humidity">20 %</p>
+                            </div>
+                            <div class="d-flex me-3">
+                                <img src="./images/icon-wind.png" class="footerIcon mx-2" alt="">
+                                <p id="wind">30 km/h</p>
+                            </div>
+                            <div class="d-flex">
+                                <img src="./images/icon-compass.png" class="L-footer" alt="">
+                                <p id="windDirection">East</p>
+                            </div>
+                        </div>
+                </div>
+                
+                <!-- Next Day -->
+
+                <div class="col-md-4 m-0 next-color rounded-4">
+                    <div class="text-center py-2 sec-color text-light" id="nextDate">
+                        <p id="nextDayName" class="my-auto">Monday</p>
+                    </div>
+                    <div class="text-start text-light p-3 text-center pt-5 " id="tomorww">
+                        <img src="./images/113 (1).png" class="nextDayImg" alt="">
+                        <h3>
+                            <span class="nextMaxTemp">30</span>
+                            <span><sup>o</sup>C</span>
+                        </h3>
+                        <h5 >
+                            <span class="nextMinTemp ">24</span>
+                            <span><sup>o</sup>C</span>
+                        </h5>
+                        <p class="nextCondationText">Partlt Cloudly</p>
+                    </div>
+                </div>
+
+                <!-- After Next  -->
+                <div class="col-md-4 m-0 after-Next-color rounded-4">
+                    <div class="text-center py-2 sec-color text-light" id="nextDate">
+                        <p id="nextDayName" class="my-auto">Tuesday</p>
+                    </div>
+                    <div class="text-start text-light p-3 text-center pt-5 " id="tomorww">
+                        <img src="./images/113 (1).png" class="nextDayImg" alt="">
+                        <h3>
+                            <span class="nextMaxTemp">30</span>
+                            <span><sup>o</sup>C</span>
+                        </h3>
+                        <h5 >
+                            <span class="nextMinTemp">24</span>
+                            <span><sup>o</sup>C</span>
+                        </h5>
+                        <p class="nextCondationText">Partlt Cloudly</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footerColor d-flex justify-content-between">
+        
+           <div class="col-md-2">
+            <form class="position-relative">
+                <input type="text" id="emailInput" class="form-control  rounded-5 ms-5" placeholder="Enter Your Email To Subscribe....."   >
+                <input type="button" value="Subscribe" id="submit">
+            </form>
+           </div>
+        <div class="col-md-4">
+            <div class="icons">
+                <ul class="d-flex ">
+                    <li class="list-unstyled px-3"><a href="#"><i class="fa-brands fa-facebook "></i></a></li>
+                    <li class="list-unstyled px-3"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="list-unstyled px-3"><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                    <li class="list-unstyled px-3"><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
